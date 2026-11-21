@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Azerbaijan | Book a Tour</title>
+</head>
+<body>
+
+<header>
+    <h1>Explore Azerbaijan</h1>
+    <p>Your journey through the Land of Fire begins here.</p>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="booking.html">Book a Tour</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Book Your Tour</h2>
+
+    <p>
+        Fill in the form below to send us your travel request.
+        Please provide accurate information.
+    </p>
+
+    <p><em>All fields marked as required must be completed.</em></p>
+
+    <h3>How to Book</h3>
+
+    <ol>
+        <li>Enter your personal information.</li>
+        <li>Choose your preferred tour and travel details.</li>
+        <li>Review your information and submit the form.</li>
+    </ol>
+
+    <hr>
+
+    <form action="#" method="get">
+
+        <!-- PART 1: PERSONAL INFORMATION -->
+        <fieldset>
+            <legend>Part 1 — Personal Information</legend>
+
+            <label for="first-name">First Name:</label>
+            <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                placeholder="Enter your first name"
+                required
+                minlength="2"
+                maxlength="30"
+                autocomplete="given-name"
+            >
+
+            <br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                placeholder="Enter your last name"
+                required
+                minlength="2"
+                maxlength="40"
+                autocomplete="family-name"
+            >
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                required
+                autocomplete="email"
+            >
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+994 XX XXX XX XX"
+                required
+                autocomplete="tel"
+            >
+
+            <br><br>
+
+            <label for="birth-date">Date of Birth:</label>
+            <input
+                type="date"
+                id="birth-date"
+                name="birthDate"
+                required
+                autocomplete="bday"
+            >
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 2: CHOOSE YOUR TOUR -->
+        <fieldset>
+            <legend>Part 2 — Choose Your Tour</legend>
+
+            <p>Select one tour:</p>
+
+            <input
+                type="radio"
+                id="tour-gabala"
+                name="tour"
+                value="gabala-weekend"
+                required
+            >
+            <label for="tour-gabala">Gabala Weekend — 180 AZN</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="tour-shahdag"
+                name="tour"
+                value="shahdag-adventure"
+            >
+            <label for="tour-shahdag">Shahdag Adventure — 350 AZN</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="tour-sheki"
+                name="tour"
+                value="sheki-cultural"
+            >
+            <label for="tour-sheki">Sheki Cultural Tour — 220 AZN</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="tour-quba"
+                name="tour"
+                value="quba-nature"
+            >
+            <label for="tour-quba">Quba Nature Trip — 190 AZN</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="tour-khinalig"
+                name="tour"
+                value="khinalig-expedition"
+            >
+            <label for="tour-khinalig">Khinalig Expedition — 400 AZN</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="tour-goygol"
+                name="tour"
+                value="goygol-escape"
+            >
+            <label for="tour-goygol">Goygol Escape — 250 AZN</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 3: TRAVEL DETAILS -->
+        <fieldset>
+            <legend>Part 3 — Travel Details</legend>
+
+            <label for="departure">Departure Date:</label>
+            <input
+                type="date"
+                id="departure"
+                name="departureDate"
+                required
+            >
+
+            <br><br>
+
+            <label for="return">Return Date:</label>
+            <input
+                type="date"
+                id="return"
+                name="returnDate"
+                required
+            >
+
+            <br><br>
+
+            <label for="travelers">Number of Travelers:</label>
+            <input
+                type="number"
+                id="travelers"
+                name="travelers"
+                min="1"
+                max="20"
+                step="1"
+                value="1"
+                required
+            >
+
+            <br><br>
+
+            <label for="room">Room Type:</label>
+
+            <select id="room" name="roomType" required>
+
+                <option value="" selected disabled>
+                    Select a room
+                </option>
+
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="family">Family Room</option>
+                <option value="no-accommodation">No Accommodation</option>
+
+            </select>
+
+            <br><br>
+
+            <p>Transportation Preference:</p>
+
+            <input
+                type="radio"
+                id="transport-bus"
+                name="transportation"
+                value="group-bus"
+                required
+            >
+            <label for="transport-bus">Group Bus</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="transport-car"
+                name="transportation"
+                value="private-car"
+            >
+            <label for="transport-car">Private Car</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="transport-self"
+                name="transportation"
+                value="self-drive"
+            >
+            <label for="transport-self">Self-Drive</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 4: ADDITIONAL SERVICES -->
+        <fieldset>
+            <legend>Part 4 — Additional Services</legend>
+
+            <p>Select any extra services you may need:</p>
+
+            <input
+                type="checkbox"
+                id="airport"
+                name="services"
+                value="airport-transfer"
+            >
+            <label for="airport">Airport Transfer</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="photographer"
+                name="services"
+                value="photographer"
+            >
+            <label for="photographer">Professional Photographer</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="guide"
+                name="services"
+                value="private-guide"
+            >
+            <label for="guide">Private Tour Guide</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="insurance"
+                name="services"
+                value="insurance"
+            >
+            <label for="insurance">Travel Insurance</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="luggage"
+                name="services"
+                value="extra-luggage"
+            >
+            <label for="luggage">Extra Luggage</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 5: FILE UPLOAD -->
+        <fieldset>
+            <legend>Part 5 — File Upload</legend>
+
+            <label for="documents">
+                Upload travel documents (if available):
+            </label>
+
+            <br><br>
+
+            <input
+                type="file"
+                id="documents"
+                name="documents"
+                accept=".pdf,.jpg,.png"
+                multiple
+            >
+
+            <p>
+                <small>
+                    You may attach PDF or image files.
+                    You can select multiple files.
+                </small>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 6: ADDITIONAL INFORMATION -->
+        <fieldset>
+            <legend>Part 6 — Additional Information</legend>
+
+            <label for="special-requests">
+                Special requests, food preferences or accessibility requirements:
+            </label>
+
+            <br><br>
+
+            <textarea
+                id="special-requests"
+                name="specialRequests"
+                rows="5"
+                cols="50"
+                placeholder="Tell us about your preferences (vegan, halal, accessibility, etc.)"
+                maxlength="500"
+            ></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 7: PAYMENT PREFERENCE -->
+        <fieldset>
+            <legend>Part 7 — Payment Preference</legend>
+
+            <p>Preferred payment method:</p>
+
+            <input
+                type="radio"
+                id="payment-cash"
+                name="payment"
+                value="cash"
+                required
+            >
+            <label for="payment-cash">Cash</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="payment-card"
+                name="payment"
+                value="card"
+            >
+            <label for="payment-card">Credit / Debit Card</label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="payment-transfer"
+                name="payment"
+                value="bank-transfer"
+            >
+            <label for="payment-transfer">Bank Transfer</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 8: NATIVE HTML VALIDATION -->
+        <fieldset>
+            <legend>Part 8 — Native HTML Validation</legend>
+
+            <p>
+                This form uses the browser's built-in validation.
+                The browser checks required fields, email format,
+                minimum and maximum values, and text length.
+            </p>
+
+            <ul>
+                <li>First and last names must contain at least 2 characters.</li>
+                <li>Number of travelers must be between 1 and 20.</li>
+                <li>Email must have a valid email format.</li>
+                <li>All required fields must be completed.</li>
+            </ul>
+
+        </fieldset>
+
+        <br>
+
+        <!-- PART 9: CONSENT AND SUBMISSION -->
+        <fieldset>
+            <legend>Part 9 — Consent and Submission</legend>
+
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="accepted"
+                required
+            >
+            <label for="terms">
+                I agree to the Terms and Conditions.
+            </label>
+
+            <br><br>
+
+            <input
+                type="checkbox"
+                id="privacy"
+                name="privacy"
+                value="accepted"
+                required
+            >
+            <label for="privacy">
+                I have read the Privacy Policy.
+            </label>
+
+            <br><br>
+
+            <button type="submit">
+                Submit Booking Request
+            </button>
+
+            <button type="reset">
+                Reset Form
+            </button>
+
+        </fieldset>
+
+    </form>
+
+    <hr>
+
+    <!-- FAQ BONUS -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>Can I change my travel dates?</summary>
+            <p>
+                Contact our team as early as possible
+                and we will check available options.
+            </p>
+        </details>
+
+        <details>
+            <summary>Are meals included in every tour?</summary>
+            <p>
+                Meal details are listed in each tour package.
+                Please check the comparison table.
+            </p>
+        </details>
+
+        <details>
+            <summary>Can children join the tours?</summary>
+            <p>
+                Children can join selected tours with a responsible adult.
+                Contact us for details.
+            </p>
+        </details>
+
+        <details>
+            <summary>What should I pack?</summary>
+            <p>
+                Pack comfortable shoes, weather-appropriate clothing,
+                personal medication and a water bottle.
+            </p>
+        </details>
+
+        <details>
+            <summary>Is travel insurance included?</summary>
+            <p>
+                Insurance is included only in packages where it is listed.
+                You can also request it as an extra service.
+            </p>
+        </details>
+
+    </section>
+
+</main>
+
+<hr>
+
+<footer>
+    <h2>Explore Azerbaijan</h2>
+
+    <address>
+        <a href="mailto:info@exploreazerbaijan.example">
+            info@exploreazerbaijan.example
+        </a>
+        |
+        <a href="tel:+994501234567">
+            +994 50 123 45 67
+        </a>
+    </address>
+
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="destinations.html">Destinations</a> |
+        <a href="tours.html">Tours</a> |
+        <a href="booking.html">Book a Tour</a>
+    </p>
+
+    <p><small>© 2026 Explore Azerbaijan</small></p>
+</footer>
+
+</body>
+</html>
